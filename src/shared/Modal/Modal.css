@@ -1,0 +1,14 @@
+ .Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.Container-success {
+  outline: none;
+  background-color: #fff;
+  max-width: 400px;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px;
+}

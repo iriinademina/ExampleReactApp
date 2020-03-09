@@ -1,0 +1,28 @@
+
+.Form {
+  outline: none;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.Form Button:nth-child(odd) {
+  margin-left: 15px;
+}
+
+.MuiCardContent-root.FormOrder {
+  padding: 0;
+}
+
+.form-message-invalid {
+  color: red;
+  margin-top: 5px;
+  padding: 0 5px 0 5px;
+}
+
+.MuiFormControl-root.FormGroup {
+  width: 100%;
+  margin-bottom: 10px;
+}

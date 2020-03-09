@@ -1,0 +1,41 @@
+.Ticket-container {
+  min-width: 275px;
+}
+
+.Ticket-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.Ticket-price {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 30px;
+}
+
+.MuiCardMedia-root {
+  height: 60px;
+  width: 200px;
+}
+
+.Ticket-price-buy {
+  margin-top: 20px;
+}
+
+.Ticket-price-buy button {
+  min-width: 200px;
+  padding: 15px 10px 15px 10px;
+  font-size: 16px;
+}
+
+.Card-details {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.Ticket-details-stops {
+  align-self: center;
+}
