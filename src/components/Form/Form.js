@@ -13,7 +13,6 @@ import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
 import { validationSchema } from "./Validator";
 
-// COMMENT: вынеси в файл validator  +++
 
 class Form extends Component {
   getErrorInput(touched, error) {
@@ -44,7 +43,7 @@ class Form extends Component {
               passportNumber: ""
             }}
             validationSchema={validationSchema}
-            // COMMENT: вынеси в отдельную функцию
+          
             onSubmit={(values, { setSubmitting, resetForm }) => {
               setSubmitting(true);
               this.props.onSuccess();
@@ -76,7 +75,7 @@ class Form extends Component {
                     onBlur={handleBlur}
                     type="email"
                     name="email"
-                    // COMMENT: вынеси в отдельную переменную перед render
+                  
                     error={this.getErrorInput(touched.email, errors.email)}
                   />
                   <Error touched={touched.email} message={errors.email}></Error>
@@ -91,7 +90,7 @@ class Form extends Component {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     name="phone"
-                    // COMMENT: вынеси в отдельную переменную перед render
+                   
                     error={this.getErrorInput(touched.phone, errors.phone)}
                   />
                   <Error touched={touched.phone} message={errors.phone}></Error>
@@ -108,7 +107,7 @@ class Form extends Component {
                     value={values.firstName}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    // COMMENT: вынеси в отдельную переменную перед render
+                    
                     error={this.getErrorInput(
                       touched.firstName,
                       errors.firstName
@@ -131,7 +130,7 @@ class Form extends Component {
                     value={values.secondName}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    // COMMENT: вынеси в отдельную переменную перед render
+                  
                     error={this.getErrorInput(
                       touched.secondName,
                       errors.secondName
@@ -154,7 +153,7 @@ class Form extends Component {
                     value={values.passportNumber}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    // COMMENT: вынеси в отдельную переменную перед render
+                    
                     error={this.getErrorInput(
                       touched.passportNumber,
                       errors.passportNumber

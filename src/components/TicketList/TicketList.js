@@ -27,9 +27,7 @@ const selectCheckboxes = (values) => {
 
 
 class TicketList extends Component {
-  // COMMENT: постарайся хранить данные в одном месте, если есть redux то лучше в нем
-  // +++ move to redux modal
-  
+ 
   close = () => this.props.closeModalForm();
   open = () => this.props.openModalForm();
   success = () => this.props.openSuccessModal();
@@ -70,7 +68,6 @@ class TicketList extends Component {
       return (
         <Ticket
           key={index.toString()}
-          // COMMENT: вынеси в отдельную переменную перед render        +++ отдельный метод
           price={this.renderPrice(price)}
           departureTime={departureTime}
           origin={origin}

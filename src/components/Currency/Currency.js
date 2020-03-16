@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 class Currency extends Component {
-  // COMMENT: постарайся хранить данные в одном месте, если есть redux то лучше в нем +++ move to redux
+
   
   componentDidMount() {
     this.props.fetchCurrentCourse();
@@ -72,7 +72,6 @@ const mapStateToProps = state => ({
   activeButton: state.currency.activeCurrency.activeButton
 });
 
-// COMMENT: () => dispatch(fetchCurrentCourse()) это можно вынести отедльный файл actions +++ docum
 
 const mapDispatchToProps = ({
   fetchCurrentCourse,

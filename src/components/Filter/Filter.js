@@ -22,9 +22,7 @@ const checkboxes = [
 ];
 
 class Filter extends Component {
-  // COMMENT: постарайся хранить данные в одном месте, если есть redux то лучше в нем
- 
-  // COMMENT: вынеси в редьюсер
+  
   handleChange = event => {
     const { name, value, checked } = event.target;
     const { setCheckboxValueAction } = this.props
